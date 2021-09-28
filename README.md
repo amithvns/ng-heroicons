@@ -1,4 +1,6 @@
-# @amithvns/ng-heroicons
+# ng-heroicons
+
+[![npm version core](https://img.shields.io/npm/v/@amithvns/ng-heroicons/latest?label=%40amithvns%2Fng-heroicons&style=flat-square)](https://www.npmjs.com/package/@amithvns/ng-heroicons)
 
 ## Installing
 

@@ -1,24 +1,18 @@
-# NgHeroiconsLib
+# @amithvns/ng-heroicons
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
+## Installing
 
-## Code scaffolding
+Run `npm install @amithvns/ng-heroicons`\
+or
+Run `yarn install @amithvns/ng-heroicons`
 
-Run `ng generate component component-name --project ng-heroicons-lib` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-heroicons-lib`.
-> Note: Don't forget to add `--project ng-heroicons-lib` or else it will be added to the default project in your `angular.json` file. 
+## Adding to an Angular project
 
-## Build
+Add the **IconsModule** to your AppModule.\
 
-Run `ng build ng-heroicons-lib` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ng-heroicons-lib`, go to the dist folder `cd dist/ng-heroicons-lib` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ng-heroicons-lib` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+IconsModule.withIcons({
+  ...ICONS_OUTLINE, 
+  ...ICONS_SOLID
+})
+```
