@@ -1,0 +1,24 @@
+:host {
+  display: inline-block;
+
+  ::ng-deep {
+    svg {
+      width: inherit;
+      height: inherit;
+    }
+
+    path {
+      stroke: currentColor;
+    }
+
+    path.no-stroke,
+    g.no-stroke {
+      stroke: none;
+    }
+
+    path.no-fill,
+    g.no-fill {
+      fill: none;
+    }
+  }
+}

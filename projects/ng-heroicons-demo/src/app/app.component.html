@@ -1,0 +1,104 @@
+<div>
+  <nav class="bg-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex flex-initial text-white">
+            <svg width="34" height="34" fill="none">
+              <path
+                d="M16 4.542a23.234 23.234 0 0013.713 4.83c.189 1.083.287 2.198.287 3.338 0 8.825-5.915 16.274-14 18.589C7.915 28.984 2 21.535 2 12.71c0-1.14.098-2.256.287-3.34A23.234 23.234 0 0016 4.543z"
+                stroke="#AC94FA" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <div class="ml-2.5 text-xl" style="color: #AC94FA;">
+              @amithvns/ng-heroicons
+            </div>
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <!-- Mobile menu button -->
+          <button type="button"
+            class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Heroicon name: outline/menu
+
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <!--
+              Heroicon name: outline/x
+
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+</div>
+
+<header class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-lg leading-6 font-semibold text-gray-900">
+      Outline Icons
+    </h1>
+  </div>
+</header>
+<main>
+  <div class="max-w-7xl mx-auto py-6 px-6 lg:px-8">
+    <div class="grid lg:grid-cols-5 gap-4 sm:grid-cols-1">
+      <div class="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex
+        items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2
+        focus-within:ring-indigo-500" *ngFor="let icon of icon_names">
+        <div class="flex-shrink-0">
+          <ng-heroicon [name]='icon' class="h-6 w-6 text-gray-500"></ng-heroicon>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="focus:outline-none">
+            <span class="absolute inset-0" aria-hidden="true"></span>
+            <p class="text-sm font-medium text-gray-900">
+              {{icon}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<header class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-lg leading-6 font-semibold text-gray-900">
+      Solid Icons
+    </h1>
+  </div>
+</header>
+<main>
+  <div class="max-w-7xl mx-auto py-6 px-6 lg:px-8">
+    <div class="grid lg:grid-cols-5 gap-4 sm:grid-cols-1">
+      <div class="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex
+        items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2
+        focus-within:ring-indigo-500" *ngFor="let icon of icon_names">
+        <div class="flex-shrink-0">
+          <ng-heroicon [name]='icon + "-solid"' class="h-6 w-6 text-gray-500"></ng-heroicon>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="focus:outline-none">
+            <span class="absolute inset-0" aria-hidden="true"></span>
+            <p class="text-sm font-medium text-gray-900">
+              {{icon + '-solid'}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
