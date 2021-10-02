@@ -60,7 +60,7 @@
         items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2
         focus-within:ring-indigo-500" *ngFor="let icon of icon_names">
         <div class="flex-shrink-0">
-          <ng-heroicon [name]='icon' class="h-6 w-6 text-gray-500"></ng-heroicon>
+          <icon [name]='icon' class="h-6 w-6 text-gray-500"></icon>
         </div>
         <div class="flex-1 min-w-0">
           <div class="focus:outline-none">
@@ -88,7 +88,7 @@
         items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2
         focus-within:ring-indigo-500" *ngFor="let icon of icon_names">
         <div class="flex-shrink-0">
-          <ng-heroicon [name]='icon + "-solid"' class="h-6 w-6 text-gray-500"></ng-heroicon>
+          <icon [name]='icon + "-solid"' class="h-6 w-6 text-gray-500"></icon>
         </div>
         <div class="flex-1 min-w-0">
           <div class="focus:outline-none">

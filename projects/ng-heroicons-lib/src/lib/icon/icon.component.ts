@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, ElementRef, Inject, Input, OnChange
 import { ICON_SET_TOKEN } from '../icon-set.token';
 
 @Component({
-  selector: 'ng-heroicon',
+  selector: 'icon',
   template: '',
   styleUrls: ['./icon.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
