@@ -10,7 +10,7 @@ Run `yarn install @amithvns/ng-heroicons`
 
 ## Adding to an Angular project
 
-Add the **IconsModule** to your AppModule.\
+Add the **IconsModule** to your AppModule.
 
 ```
 IconsModule.withIcons({
@@ -18,3 +18,10 @@ IconsModule.withIcons({
   ...ICONS_SOLID
 })
 ```
+
+## Basic Usage
+Outline icons
+`<ng-heroicon name='user' class="h-6 w-6 text-gray-500"></ng-heroicon>`
+
+Solid icons
+`<ng-heroicon name='user-solid' class="h-6 w-6 text-gray-500"></ng-heroicon>`
