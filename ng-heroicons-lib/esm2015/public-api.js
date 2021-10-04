@@ -1,0 +1,8 @@
+/*
+ * Public API Surface of ng-heroicons-lib
+ */
+export * from './lib/icons-outline';
+export * from './lib/icons-solid';
+export * from './lib/icon/icon.component';
+export * from './lib/icons.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Byb2plY3RzL25nLWhlcm9pY29ucy1saWIvc3JjL3B1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0dBRUc7QUFFSCxjQUFjLHFCQUFxQixDQUFDO0FBQ3BDLGNBQWMsbUJBQW1CLENBQUM7QUFDbEMsY0FBYywyQkFBMkIsQ0FBQztBQUMxQyxjQUFjLG9CQUFvQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAqIFB1YmxpYyBBUEkgU3VyZmFjZSBvZiBuZy1oZXJvaWNvbnMtbGliXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9saWIvaWNvbnMtb3V0bGluZSc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9pY29ucy1zb2xpZCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9pY29uL2ljb24uY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbGliL2ljb25zLm1vZHVsZSc7XG4iXX0=
