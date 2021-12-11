@@ -1,0 +1,16 @@
+name: Version Increment
+on: pull_request
+jobs:
+  version:
+    runs-on: ubuntu-latest
+    if: '${{github.event.pull_request.head.repo.full_name == github.repository}}'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
+          ref: ${{ github.event.pull_request.head.ref }}
+      - run: git config --global user.name 'amithvns'
+      - run: git config --global user.email 'amithvns@gmail.com'
+      - run: npm run lib-version
+      - run: npm version minor -m "[RELEASE] %s"
+      - run: git push
