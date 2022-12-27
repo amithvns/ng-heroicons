@@ -102,3 +102,31 @@
     </div>
   </div>
 </main>
+<header class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-lg leading-6 font-semibold text-gray-900">
+      Mini Icons
+    </h1>
+  </div>
+</header>
+<main>
+  <div class="max-w-7xl mx-auto py-6 px-6 lg:px-8">
+    <div class="grid lg:grid-cols-5 gap-4 sm:grid-cols-1">
+      <div class="relative rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm flex
+        items-center space-x-3 hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2
+        focus-within:ring-indigo-500" *ngFor="let icon of icon_names">
+        <div class="flex-shrink-0">
+          <icon [name]='icon + "-mini"' class="text-gray-500"></icon>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="focus:outline-none">
+            <span class="absolute inset-0" aria-hidden="true"></span>
+            <p class="text-sm font-medium text-gray-900">
+              {{icon + '-mini'}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

@@ -28,7 +28,7 @@ export class IconComponent implements OnChanges {
     if (!this.name) {
       return;
     }
-    const name = this.camelize(this.name);
+    const name = this.getPropertyName(this.name);
     if (!this.icons.hasOwnProperty(name)) {
       return console.warn(
         `No icon named ${name} was found. You may need to import it using the withIcons function.`
@@ -38,8 +38,11 @@ export class IconComponent implements OnChanges {
     const content = this.icons[name];
     let svg = '';
     if (!content.includes('<svg')) {
-      svg = this.name.includes('solid') ? '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">'
-        : '<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">';
+      if (this.name.includes('mini')) {
+        svg = '<svg stroke="currentColor" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">';
+      } else {
+        svg = '<svg stroke="currentColor" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">';
+      }
       svg = svg + content + '</svg>';
     }
     else {
@@ -57,5 +60,16 @@ export class IconComponent implements OnChanges {
     return value
       .replace(/(-|_|\.|\s)+(.)?/g, (match, separator, character) => character ? character.toUpperCase() : '')
       .replace(/^([A-Z])/, (match) => match.toLowerCase());
+  }
+
+  getPropertyName(value: string = ''): string {
+    const name = value;
+    if (value.includes('mini')) {
+      return name.replace(/-/g, '_').replace('mini', '20_solid');
+    } else if (value.includes('solid')) {
+      return name.replace(/-/g, '_').replace('solid', '24_solid');
+    } else {
+      return name.replace(/-/g, '_') + '_24_outline';
+    }
   }
 }

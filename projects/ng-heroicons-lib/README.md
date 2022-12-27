@@ -14,8 +14,9 @@ Add the **IconsModule** to your AppModule.
 
 ```
 IconsModule.withIcons({
-  ...ICONS_OUTLINE, 
-  ...ICONS_SOLID
+  ...ICONS_OUTLINE,
+  ...ICONS_SOLID,
+  ...ICONS_MINI
 })
 ```
 

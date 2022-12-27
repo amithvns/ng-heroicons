@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { IconsModule, ICONS_OUTLINE, ICONS_SOLID } from '@amithvns/ng-heroicons';
+import { IconsModule, ICONS_OUTLINE, ICONS_SOLID, ICONS_MINI } from '@amithvns/ng-heroicons';
 
 import { AppComponent } from './app.component';
 
@@ -12,7 +12,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     IconsModule.withIcons({
       ...ICONS_OUTLINE,
-      ...ICONS_SOLID
+      ...ICONS_SOLID,
+      ...ICONS_MINI
     })
   ],
   providers: [
